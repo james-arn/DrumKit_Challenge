@@ -10,20 +10,15 @@ const playTink = new Audio("assets/sounds/tink.wav");
 const playTom = new Audio("assets/sounds/tom.wav");
 
 //declare button variables
-const clickBoom = document.getElementById("A")
-const clickClap = document.getElementById("S")
-const clickHihat = document.getElementById("D")
-const clickKick = document.getElementById("F")
-const clickOpenhat = document.getElementById("G")
-const clickRide = document.getElementById("H")
-const clickSnare = document.getElementById("J")
-const clickTink = document.getElementById("K")
-const clickTom = document.getElementById("L")
-
-// declare key press function to produce 
-const buttons = document.getElementsByClassName('buttons')
-
-buttons.onclick = 
+const clickBoom = document.getElementById("A");
+const clickClap = document.getElementById("S");
+const clickHihat = document.getElementById("D");
+const clickKick = document.getElementById("F");
+const clickOpenhat = document.getElementById("G");
+const clickRide = document.getElementById("H");
+const clickSnare = document.getElementById("J");
+const clickTink = document.getElementById("K");
+const clickTom = document.getElementById("L");
 
 document.addEventListener("keypress", function(event) {
   sound(event.key);
