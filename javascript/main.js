@@ -20,12 +20,12 @@ const clickSnare = document.getElementById("J");
 const clickTink = document.getElementById("K");
 const clickTom = document.getElementById("L");
 
+// key press listener and function switch
 document.addEventListener("keypress", function(event) {
-  sound(event.key);
+  soundKey(event.key);
 });
 
-// create sound function with switch when click or press
-function sound (key) {
+function soundKey (key) {
 switch(key){
 case "a":
 case "A":
@@ -77,6 +77,61 @@ playTink.play();
     break;
 case "l":
 case "L":
+playTom.pause()
+playTom.currentTime = 0
+playTom.play();
+    break;
+}
+}
+
+// click listener and function switch - not working.
+document.addEventListener("click", function(event) {
+  soundClick(event.click);
+});
+
+function soundClick (event) {
+switch(event){
+case clickBoom:
+playBoom.pause()
+playBoom.currentTime = 0
+playBoom.play();
+  break;
+case clickClap:
+playClap.pause()
+playClap.currentTime = 0
+playClap.play();
+  break;
+case clickHihat:
+playHihat.pause()
+playHihat.currentTime = 0
+playHihat.play();
+  break;
+case clickKick:
+playKick.pause()
+playKick.currentTime = 0
+playKick.play();
+    break;
+case clickOpenhat:
+playOpenhat.pause()
+playOpenhat.currentTime = 0
+playOpenhat.play();
+    break;
+case clickRide:
+playRide.pause()
+playRide.currentTime = 0
+playRide.play();
+    break;
+case clickSnare:
+playSnare.pause()
+playSnare.currentTime = 0
+playSnare.play();
+    break;
+case clickTink:
+playTink.pause()
+playTink.currentTime = 0
+playTink.play();
+    break;
+case clickTom:
 playTom.pause()
 playTom.currentTime = 0
 playTom.play();
