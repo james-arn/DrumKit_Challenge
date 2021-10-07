@@ -20,6 +20,62 @@ const clickSnare = document.getElementById("J");
 const clickTink = document.getElementById("K");
 const clickTom = document.getElementById("L");
 
+// click listeners
+clickBoom.addEventListener("click", function() {
+  playBoom.pause()
+  playBoom.currentTime = 0
+  playBoom.play();
+});
+
+clickClap.addEventListener("click", function() {
+playClap.pause()
+playClap.currentTime = 0
+playClap.play();
+});
+
+clickHihat.addEventListener("click", function() {
+playHihat.pause()
+playHihat.currentTime = 0
+playHihat.play();
+});
+
+clickKick.addEventListener("click", function() {
+playKick.pause()
+playKick.currentTime = 0
+playKick.play();
+});
+
+clickOpenhat.addEventListener("click", function() {
+playOpenhat.pause()
+playOpenhat.currentTime = 0
+playOpenhat.play();
+});
+
+clickRide.addEventListener("click", function() {
+playRide.pause()
+playRide.currentTime = 0
+playRide.play();
+});
+
+clickSnare.addEventListener("click", function() {
+playSnare.pause()
+playSnare.currentTime = 0
+playSnare.play();
+});
+
+clickTink.addEventListener("click", function() {
+playTink.pause()
+playTink.currentTime = 0
+playTink.play();
+});
+
+clickTom.addEventListener("click", function() {
+playTom.pause()
+playTom.currentTime = 0
+playTom.play();
+});
+
+
 // key press listener and function switch
 document.addEventListener("keypress", function(event) {
   soundKey(event.key);
@@ -77,61 +133,6 @@ playTink.play();
     break;
 case "l":
 case "L":
-playTom.pause()
-playTom.currentTime = 0
-playTom.play();
-    break;
-}
-}
-
-// click listener and function switch - not working.
-document.addEventListener("click", function(event) {
-  soundClick(event.click);
-});
-
-function soundClick (event) {
-switch(event){
-case clickBoom:
-playBoom.pause()
-playBoom.currentTime = 0
-playBoom.play();
-  break;
-case clickClap:
-playClap.pause()
-playClap.currentTime = 0
-playClap.play();
-  break;
-case clickHihat:
-playHihat.pause()
-playHihat.currentTime = 0
-playHihat.play();
-  break;
-case clickKick:
-playKick.pause()
-playKick.currentTime = 0
-playKick.play();
-    break;
-case clickOpenhat:
-playOpenhat.pause()
-playOpenhat.currentTime = 0
-playOpenhat.play();
-    break;
-case clickRide:
-playRide.pause()
-playRide.currentTime = 0
-playRide.play();
-    break;
-case clickSnare:
-playSnare.pause()
-playSnare.currentTime = 0
-playSnare.play();
-    break;
-case clickTink:
-playTink.pause()
-playTink.currentTime = 0
-playTink.play();
-    break;
-case clickTom:
 playTom.pause()
 playTom.currentTime = 0
 playTom.play();
